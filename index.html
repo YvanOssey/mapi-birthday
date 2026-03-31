@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joyeux Anniversaire Mapi 🌸</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- section OVERLAY RÉVÉLATION  -->
+  <canvas id="confetti-canvas"></canvas>
+  <div id="reveal-overlay">
+    <div class="reveal-msg" id="reveal-msg">🌸 Joyeux Anniversaire Mapi ! 🌸</div>
+  </div>
+
+  <!-- Pétales -->
+  <div id="petals-container"></div>
+
+
+  <nav>
+    <a href="#hero">Accueil</a>
+    <a href="#letter">Lettre</a>
+    <a href="#gallery">Galerie</a>
+    <a href="#guestbook">Livre d'or</a>
+  </nav>
+
+  <!-- section HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-inner">
+      <p class="eyebrow">✦ 3 Avril · Un jour très spécial ✦</p>
+      <h1>Joyeux<br><em>Anniversaire</em><br>Marie-Priscille 🌸</h1>
+      <p class="hero-sub">À la plus belle des fille</p>
+      <div class="gold-line"></div>
+      <p class="scroll-hint">Défile pour découvrir ta surprise ↓</p>
+    </div>
+  </section>
+
+  <!-- Mes mots -->
+  <section id="letter" class="sec-wrap">
+    <p class="eyebrow reveal">✦ Depuis le fond du cœur ✦</p>
+    <h2 class="section-title reveal">Une <em>lettre</em> pour toi</h2>
+
+    <div class="letter-with-photo reveal">
+
+
+      <div class="letter-photo-wrap">
+        <img src="images/Karel.jpeg" alt="Marie-Karel" class="letter-photo">
+      </div>
+
+      <div class="letter-card">
+        <p class="letter-body">
+          Ma Maé,<br>
+          Quelle chose que je dirai que tu ne sais pas ? A part béni le nom de Dieu pour ta personne. Pour ton amour …
+          On vient de loin quand même 😂😂. Chacune a vu l’autre plus bas que terre . Entre chagrin d’amour, étude , vie
+          religieuse, vie sociale et j’en passe . Tant de fois note relation a été marqué pas des coups j’en citerai une
+          qui est super marquante: le coup de Teddy 😂😂.
+          J’ose croire de tout mon entourage et même ma famille tu es la seule personne qui arrive à savoir quand je ne
+          vais pas bien , quand je suis au plus bas , quand j’ai envie de vraiment prendre un couteau pour rendre l’âme…
+          je sais, je suis difficile souvent et que certaines choses m’ont rendu un peu dure ,tu es la seule qui arrive
+          à
+          faire tomber ce château de sable et me faire redevenir cette petite douce.
+          Aujourd’hui, c’est certes la mort de Jésus sur La Croix mais c’est le moment pour moi de TE CÉLÉBRER.
+          JOYEUX ANNIVERSAIRE MON AMOUREUSE🤍.
+          Je suis tellement mais TELLEMENT FIÈRE de cette dame que tu deviens . Des épreuves il y’en aura tout le temps
+          mais tu réussis à te relever avec un tel courage que souvent je me demande d’où elle tire sa force celle-là?>
+          .
+          Je ne te le dis peut-être pas mais tu es UN MODÈLE pour moi ( on reparlera à la célébration de nos 11 ans ).
+          Dieu seul sait mes prières pour toi .
+          Tu mérites tellement d’être heureuse.
+          Tu mérites tellement d’être choyée .
+          Tu mérites tellement le bonheur .
+          Que la vierge , son fils et Saint Joseph soient toujours avec toi .
+          ENJOY SOULMATE . Et n’oublie jamais À DEUX ON PEUT LE FAIRE MAIS SEULEMENT SI TU VEUX , À DEUX ON PEUT LES
+          FAIRE TAIRE MÊME EN ENFER JE TE VEUX> .
+          JOYEUX ANNIVERSAIRE MON BLEU POUSSIN CUI CUI .
+          JE T’AIME🤍.
+        </p>
+        <p class="letter-sig">— Ta Noé 💕</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- section GALERIE -->
+  <section id="gallery" class="sec-wrap">
+    <p class="eyebrow reveal">✦ Nos plus beaux souvenirs ✦</p>
+    <h2 class="section-title reveal">La <em>galerie</em> de Mapi</h2>
+
+    <div class="gallery-sections">
+
+      <!-- ── SECTION 1 : Souvenirs & sorties ── -->
+      
+      <div class="gallery-section reveal">
+        <h3 class="gallery-section-title">🌟 Des moments partagés ensemble !</h3>
+        <div class="gallery-grid" id="grid-sorties">
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo1.jpeg" alt="Souvenir 1" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo2.jpeg" alt="Souvenir 2" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo3.jpeg" alt="Souvenir 3" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo4.jpeg" alt="Souvenir 4" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo5.jpeg" alt="Souvenir 5" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo6.jpeg" alt="Souvenir 6" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo7.jpeg" alt="Souvenir 7" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo8.jpeg" alt="Souvenir 8" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo9.jpeg" alt="Souvenir 9" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo10.jpeg" alt="Souvenir 10" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo11.jpeg" alt="Souvenir 11" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo12.jpeg" alt="Souvenir 12" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo13.jpeg" alt="Souvenir 13" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo14.jpeg" alt="Souvenir 14" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo15.jpeg" alt="Souvenir 15" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo16.jpeg" alt="Souvenir 16" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo17.jpeg" alt="Souvenir 17" loading="lazy">
+          </div>
+          
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo18.jpeg" alt="Souvenir 18" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo19.jpeg" alt="Souvenir 19" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo20.jpeg" alt="Souvenir 20" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo21.jpeg" alt="Souvenir 21" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo22.jpeg" alt="Souvenir 22" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo23.jpeg" alt="Souvenir 23" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo24.jpeg" alt="Souvenir 24" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo25.jpeg" alt="Souvenir 25" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo26.jpeg" alt="Souvenir 26" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo27.jpeg" alt="Souvenir 27" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo28.jpeg" alt="Souvenir 28" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo29.jpeg" alt="Souvenir 29" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo30.jpeg" alt="Souvenir 30" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo31.jpeg" alt="Souvenir 31" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo32.jpeg" alt="Souvenir 32" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo33.jpeg" alt="Souvenir 33" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo34.jpeg" alt="Souvenir 34" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo35.jpeg" alt="Souvenir 35" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo36.jpeg" alt="Souvenir 36" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo37.jpeg" alt="Souvenir 37" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo38.jpeg" alt="Souvenir 38" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo39.jpeg" alt="Souvenir 39" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo40.jpeg" alt="Souvenir 40" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo41.jpeg" alt="Souvenir 41" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo42.jpeg" alt="Souvenir 42" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo43.jpeg" alt="Souvenir 43" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo44.jpeg" alt="Souvenir 44" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo45.jpeg" alt="Souvenir 45" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo46.jpeg" alt="Souvenir 46" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo47.jpeg" alt="Souvenir 47" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo48.jpeg" alt="Souvenir 48" loading="lazy">
+          </div>
+
+          <div class="gallery-item" onclick="openLB(this.querySelector('img').src)">
+            <img src="images/photo49.jpeg" alt="Souvenir 49" loading="lazy">
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+
+      <!-- SECTION 2 : Moments fous -->
+      
+      
+
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <span class="lb-close" onclick="closeLB()">✕</span>
+    <img id="lb-img" src="" alt="">
+  </div>
+
+  <!-- Section messages des proches -->
+
+  <section id="guestbook" class="sec-wrap">
+    <p class="eyebrow reveal">✦ Des mots qui viennent du cœur ✦</p>
+    <h2 class="section-title reveal">Livre <em>d'or</em></h2>
+    <p class="reveal" style="color:var(--text-light);font-size:.88rem;margin-bottom:2.5rem;">
+      Tes proches ont laissé un message rien que pour toi 💌
+    </p>
+
+    <div class="gb-grid">
+
+
+      <div class="gb-card">
+        <img class="gb-photo" src="images/Photo_marie_esther.jpeg" alt="Proche 1">
+        <div class="gb-body">
+          <div class="gb-name">Marie-Esther</div>
+          <div class="gb-msg">j'ai été la prière de cette formidable femme pendant 6 années.Sa prière était d'avoir une
+            sœur .
+            Et quelques années plus tard : le 04 janvier 2010, je suis rentrée dans sa vie.
+            Elle était la plus heureuse même si j'aimais pas lorsqu' elle me soulevait de manière exagérée .
+            Elle était là quand je faisais mes premiers pas . Et elle est encore là pour moi .
+            Elle est reste ma première meilleure amie et je l'aime plus que tout même si on se le dit pas assez.
+            Et malgré nos nombreuses disputes je reste sa première femme , joyeux anniversaire Nou.
+            Bisous! 🌸
+          </div>
+        </div>
+      </div>
+
+
+      <div class="gb-card">
+        <img class="gb-photo" src="images/photo_lumina.jpeg" alt="Proche 2">
+        <div class="gb-body">
+          <div class="gb-name">Lumina</div>
+          <div class="gb-msg">Joyeux anniversaire ma Noura , aujourd’hui tu souffles ta 22e bougie ,
+            ce n’est absolument pas petit , je prie que Dieu t’accompagne dans cette vie ,
+            qu’il te comble de grâce et de bénédiction, sache que tu es une si très belle personne de l’extérieur comme
+            de l’intérieur,
+            continue toujours d’être cette fille joyeuse , aimable et surtout qui apporte une bonne humeur autour d’elle
+            ,
+            je vais pas trop parler je fais faire court et terminer en te disant, encore un heureux anniversaire à toi,
+            luv uu❤️❤️❤️. 💕</div>
+        </div>
+      </div>
+
+
+      <div class="gb-card">
+        <img class="gb-photo" src="images/mum_cécile.jpeg" alt="Proche 3">
+        <div class="gb-body">
+          <div class="gb-name">Mum Cécile</div>
+          <div class="gb-msg">Que ce nouvel âge t'apporte la paix véritable en Jésus- Christ, que ton cœur déborde de
+            joies et d'Amour.
+            Je prie que tu demeures une bénédiction pour ta Famille et ceux qui t'entourent.
+            Grâces et bénédictions de l'Éternel surabondent dans ta vie au nom de Jésus Christ
+            Hbd ma fille je t'aime gros comme un cœur.
+            Mum Cécile. ✨</div>
+        </div>
+      </div>
+
+
+
+      <div class="gb-card">
+        <div class="gb-photo-placeholder">🌸</div>
+        <div class="gb-body">
+          <div class="gb-name">Chérif</div>
+          <div class="gb-msg">Joyeux Anniversaire, Mappi !
+            Aujourd’hui, le monde célèbre l’anniversaire d’une personne aussi rare qu’un rayon de soleil en hiver...
+            Mappi !
+            Que cette journée soit aussi douce que ton sourire, aussi lumineuse que ton cœur, et aussi magique que tes
+            rêves les plus fous. Qu’elle t’apporte des tonnes de bonheur, des éclats de rire contagieux et des souvenirs
+            précieux à chérir.
+            Tu es une étoile unique dans ce vaste ciel, et aujourd’hui, c’est ta fête ! Profite de chaque instant,
+            savoure chaque délice (surtout le gâteau ! ), et laisse-toi porter par l’amour et la joie que tu inspires
+            autour de toi. Bonne année pleine de surprises, de réussites et d’étoiles filantes à attraper !
+            Avec tout mon tendre,
+            *(PS : N’oublie pas de faire un vœu... il se réalisera, j’en suis sûr !)*.
+          </div>
+        </div>
+      </div>
+
+
+      <div class="gb-card">
+        <img class="gb-photo" src="images/nancy.jpeg" alt="Proche 4">
+        <div class="gb-body">
+          <div class="gb-name">Nancy</div>
+          <div class="gb-msg">Aujourd'hui je célèbre plus qu'une date nous célébrons toi et tout l'amour que tu as
+            partagé tes rires et ta présence bienveillante sont les pierres précieuses,
+            que cette journée te soit douce et remplie de tout le bonheur que tu mérites
+            et c'est une telle bénédiction d'avoir une sœur intelligente et aimante comme toi, tu es le plus beau cadeau
+            que
+            j'ai jamais reçu d'une autre mère je te souhaite des sourires à n'en plus finir des souvenirs inoubliables
+            et une année encore plus extraordinaire.
+            Merci d'être toi et d'être là joyeux anniversaire ma puce. 🎂</div>
+        </div>
+      </div>
+
+
+      <div class="gb-card">
+        <img class="gb-photo" src="images/oriane.jpeg" alt="Proche 5">
+        <div class="gb-body">
+          <div class="gb-name">Oriane Elvire</div>
+          <div class="gb-msg">Joyeux anniversaire ma madame petit poussin cui cui .
+            On a commencer à se parler avec beaucoup de hasard en tout cas c’était pas facile la lutte pour t’avoir
+            comme amie mais j’y suis arrivée au point même de réussir à m’intégrer un tout petit peu dans ton univers
+            je te remercie d’être cette amie formidable gentille prête pour les autres
+            je te souhaite tout ce qu’il y a de bon dans la vie que ce soit au niveau études relation famille etc ...
+            tu sais que je t’aime j’ai pas besoin de beaucoup en dire la dessus mais on est ensemble bisous ma belle .
+            Je t’aime 🌺
+          </div>
+        </div>
+      </div>
+
+
+      <div class="gb-card">
+        <img class="gb-photo" src="images/massa.jpeg" alt="Proche 6">
+        <div class="gb-body">
+          <div class="gb-name">Coulibaly Massa</div>
+          <div class="gb-msg">Coucou MaPyyyyyy
+            Partenaire dans 4788900273736272 crime
+            On en profite tous pour te souhaiter un JOYEUX ANNIVERSAIRE qu’allah veille sur toi ,Succès ,Longévité
+            ,Prospérité .Toi et moi on s’est juste connu ça fait pas vraiment un long moment mais en vrai ce petit
+            moment passer avec toi sache que t’es vraiment adorable tu fais partie de mes amis et j’en suis très fière
+            Moin de gbayage de cours .
+            Prions tous le bon seigneur que nous qui sommes tous réunis ici que notre amitié ce base sur de bon terme
+            encore beaucoup de sagesse,on t’aimmeeee oooooooo j’ai pas tellement trop trop de mot à dire comme mes amis
+            ici présent parce que ils ont vraiment tout cartonner et ils ont tout dit tu capte .Sois toujours toi mm
+            C’est le papa mouninin toi mm tu connais
+            Nayeeeeeee
+            Joyeux anniversaire. 🥂
+          </div>
+        </div>
+      </div>
+
+
+      <div class="gb-card">
+        <img class="gb-photo" src="images/yvan.jpeg" alt="Proche 7">
+        <div class="gb-body">
+          <div class="gb-name">Yvan Ossey</div>
+          <div class="gb-msg">Joyeux anniversaire à ma partenaire de crime préférée !
+            Depuis le temps qu’on gbaye les cours ensemble, qu’on dort en classe comme si c’était un sport et qu’on
+            organise nos sortir comme des pros, je me dis qu’on mériterait presque un Oscar de la flemme. Mais
+            aujourd’hui, c’est TOI qui mérites tous les honneurs
+            Tu n’es pas juste une pote, tu es celle qui rend même les journées les plus nulles drôles, celle avec qui un
+            simple "position de demain ou de midi ?" devient une aventure et celle sans qui la vie serait 100% plus
+            chiant. Alors aujourd’hui, je te souhaite tout le bonheur du monde,
+            une vie remplie de joie, de réussite et de belles surprises.
+            Que Dieu te bénisse abondamment, te protège et renforce encore davantage cette belle amitié qui nous unit...
+            Profite au Max avec tes trois lièvres 😂.
+            Encore joyeux anniversaire Mapiiii
+            Ton complice de toujours.💐</div>
+        </div>
+      </div>
+
+
+      <div class="gb-card">
+        <img class="gb-photo" src="images/junior.jpeg" alt="Proche 8">
+        <div class="gb-body">
+          <div class="gb-name">Junior</div>
+          <div class="gb-msg">Cc voizzzzz , m’a confidente, ma pote , ma go😝.
+            En ce jour spécial je profite pour te dire que tu es une personne avec un grand cœur oui je le dit et je le
+            répète tu es une personne aimable ,
+            tu as toujours été un soutien pour moi tu m’as toujours donné des conseils dans mes relations amoureuse
+            comme amicale.
+            L’année dernière je suis arrivé dans l’école étant renfermé, timide … mais grâce à toi et à tout nos
+            histoires de bading
+            j’ai pu m’ouvrir et être beaucoup plus épanouis . En t'observant j'ai souvent vu ces moments où tu n'étais
+            pas forcément de bonne humeur mais tu ne laissais jamais paraître cette image ,
+            de peur que cela affecte ton entourage et ce genre de personne on en a tjr besoin sur cette terre alors Mlle
+            KNMP je vous souhaite longue vie , le succès, la santé surtout mentale comme physique ,
+            que tu puisses réaliser tout tes vœux. Et que notre amitié dure pour toujours Apibêdétouyou❤️
+            C'est ton jour dc profite au max
+            Ton chéri Junior 🌷
+          </div>
+        </div>
+      </div>
+
+
+      <div class="gb-card">
+        <img class="gb-photo" src="images/ariel.jpeg" alt="Proche 9">
+        <div class="gb-body">
+          <div class="gb-name">𝓐𝓻𝓲𝓮𝓵 𝓒𝓱𝓮𝓻𝓾𝓫𝓲𝓷</div>
+          <div class="gb-msg">Les longs mots et tour je suis fatigué heun mais des simples mots
+            peuvent décrire cette merveilleuse personne que tu es : Joviale, intelligente, gentille...et j’en passe...
+            epuis tu dors trop en classe tchai faut suivre cours là ahu pourtant si tu étais à la maison tu allais nous
+            embrouiller avec tes story time heun !
+            Je n’ai pas cette forte affinité comme toi avec tes voisins mais je te connais au moins et je sais que tu
+            incarnes la bonne humeur et la joie de vivre en plus du fait que l’humour sur toi en tout cas tu as beaucoup
+            de qualités en plus de tout ce que j’ai dis là même Estomac de maçon;
+            Decapsule bierre avec tes dents ; y a trop même tchieee en tout cas tu es chic même Bref
+            j’ai dis j’allais pas beaucoup parler oh , toi même tu sais que j’ai aura x1000 cohan faut pas je vais
+            parler tu vas trop pleurer ici HBD Noura.
+            Cordialement. 🎁</div>
+        </div>
+      </div>
+
+
+      <div class="gb-card">
+        <img class="gb-photo" src="images/evariste.jpeg" alt="Proche 10">
+        <div class="gb-body">
+          <div class="gb-name">Evariste</div>
+          <div class="gb-msg">Ma chère amie,
+            En ce jour si spécial, j'ai pris un moment pour repenser à tout le chemin qu'on a parcouru ensemble. Je me
+            revois encore avec toi sur les bancs du lycée, à partager nos éclats de rire, nos stress d'avant devoirs et
+            nos rêves d'avenir qui nous semblaient alors si lointains.
+            On dit souvent que les amitiés du lycée s'effacent avec l'arrivée à l'université, que chacun prend sa route
+            et finit par oublier l'autre sous le poids des nouvelles responsabilités et des nouveaux visages. Mais avec
+            toi, c'est différent. Malgré les amphis, les partiels et la distance que les études imposent parfois, notre
+            lien n'a pas bougé. Au contraire, il s'est renforcé.
+            Merci d'être cette épaule sur laquelle je peux toujours compter et cette confidente qui me connaît par cœur.
+            Savoir que j'ai une amie comme toi à mes côtés, alors qu'on construit nos vies d'adultes, est une chance
+            immense. Tu es restée la même personne authentique et précieuse que j'ai rencontrée il y a quelques années,
+            et je suis tellement fière de la femme que tu deviens à l'université.
+            Pour cet anniversaire, je te souhaite tout le succès que tu mérites dans tes études et, surtout, tout le
+            bonheur du monde. Que cette nouvelle année t'apporte autant de joie que tu en distribues autour de toi.
+            Joyeux anniversaire, mon amie. On a survécu au lycée, on conquiert l'université, et je sais qu'on sera
+            encore là l'un pour l'autre pour tout ce qui suivra. 🌟</div>
+        </div>
+      </div>
+
+
+      <div class="gb-card">
+        <img class="gb-photo" src="images/miriam.jpeg" alt="Proche 11">
+        <div class="gb-body">
+          <div class="gb-name">Miriam</div>
+          <div class="gb-msg">Il n’y a pas assez de mots pour exprimer à quel point tu comptes pour moi. Tu es bien plus
+            qu’une grande sœur , tu es un modèle, sur qui je tire ma responsabilité et mon raisonnement À chaque étape
+            de ma vie . ton amour, ta bienveillance et ta force qui m’inspirent chaque jour. Merci pour ton soutien
+            inconditionnel, pour tes conseils précieux et pour tous ces moments de joie que nous partageons. Je suis
+            infiniment reconnaissante de t’avoir à mes côtés.
+            Joyeux anniversaire notre nounou d’amour. Que Dieu te bénisse.
+          </div>
+        </div>
+      </div>
+
+      <div class="gb-card">
+        <img class="gb-photo" src="images/jean-claude.jpeg" alt="Proche 12">
+        <div class="gb-body">
+          <div class="gb-name">Jean-Claude Nambou</div>
+          <div class="gb-msg">Salut Noura, tu vas bien j'espère. Je voulais te souhaiter un joyeux anniversaire et que
+            ces 1 ans t'apporte autant de bonheur et de sourires que tu en donnes autour de toi.
+            Tu es une personne pleine de gentillesse, de lumière et d'élégance. Tu as cette façon de donner la joie
+            autour de toi et surtout aux enfants . De te donner sans attendre en retour ( tu aurais dû être scout ) et
+            franchement j'aime. Continue d'être comme tu es née change pour personne et enfin que cette année soit à la
+            hauteur de cœur rempli d'amour de projet de réussite et de bonheur.
+            Ne change jamais tu es une perle rare. Joyeux anniversaire. </div>
+        </div>
+      </div>
+
+      <div class="gb-card">
+        <img class="gb-photo" src="images/samuel.jpeg" alt="Proche 13">
+        <div class="gb-body">
+          <div class="gb-name">Samuel Diaon</div>
+          <div class="gb-msg">Joyeux anniversaire à toi, Marie-Priscillie !
+            On a grandi ensemble, et même si tu as toujours eu quelques années d’avance sur moi, tu as toujours été là
+            comme une grande sœur . Merci pour ton amour, tes conseils et tous les souvenirs qu’on partage .Que cette
+            nouvelle année t’apporte encore plus de bonheur , de santé et de succès . Tu le mérites de tout cœur
+            A ma grande sœur d’amour.
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="gb-card">
+        <img class="gb-photo" src="images/Toumey.jpeg" alt="Proche 14">
+        <div class="gb-body">
+          <div class="gb-name">Emmanuel Toumey</div>
+          <div class="gb-msg">Il y a des personnes qui marquent nos vies sans même le vouloir, juste par leur façon
+            d’être, par leur générosité et leur présence. Tu en fais partie. À travers les rires, les discussions et
+            même les crêpes, tu apportes quelque chose d’unique et de sincère. En ce jour spécial, je te souhaite tout
+            le bonheur que tu mérites et bien plus encore. Continue d’être cette belle personne que tu es. Joyeux
+            anniversaire Poussin cui cui. En cette année de plus, j'aimerais d'abord te féliciter pour la petite
+            battante que tu es devenue. Malgré toutes ces difficultés, tu ne cesses de te battre pour ce en quoi tu
+            crois. Par la suite, je te souhaite vraiment de réussir dans ce que tu entreprendras et que le Seigneur
+            lui-même soit au devant de tes projets. Tu es une battante, une femme forte, alors arrête avec les
+            dépressions et ressaisis-toi, il n'est jamais trop tard!!!. Enfin, je te souhaite une année couronnée de
+            gloire et de succès. More life Jeune.
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="gb-card">
+        <img class="gb-photo" src="images/alexandra.jpeg" alt="Proche 15">
+        <div class="gb-body">
+          <div class="gb-name">Marie-Alexandra</div>
+          <div class="gb-msg">Si on m’avait dit dans le passé que j’allais être parmi les personnes qui te font des
+            lettres pour ton anniversaire j’allais pas croire.
+            Je n’aurai jamais pensé qu’on allait se rapprocher mais comme Dieu sait faire les choses nous voilà. Je suis
+            contente de t’avoir dans ma vie.
+            Derrière ton air, tu es une très belle personne qui aime son prochain et qui fait tout pour mettre à
+            l’aise. J’espère que notre relation continuera d’évoluer.
+            Joyeux anniversaire Noura, que Dieu t’accorde tout les désirs de ton cœur. Tu mérites d’être heureuse et
+            je te le souhaite sincèrement. Ma porte te sera toujours ouverte si tu as besoin de parler et autre. Bref
+            love u la vielle ❤️❤️❤️.
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="gb-card">
+        <img class="gb-photo" src="images/Michel.jpeg" alt="Proche 16">
+        <div class="gb-body">
+          <div class="gb-name">Ange-Michel Kouebi</div>
+          <div class="gb-msg">Pendant ces moments où j'étais carrément éprouvé aussi bien physiquement que mentalement,
+            je me suis retrouvé dans une bulle à l'intérieur de laquelle je me sentais mieux éloigné de tout ce qui me
+            prenait la tête. Mais, le SEIGNEUR JESUS m'a permis de rencontrer de magnifiques filles aux grands cœurs qui
+            m'acceptent comme je suis mais surtout qui n'hésitent pas à m'apporter certaines réprimandes quand elles
+            voient un souci. Cette fille fait partie de ces deux-là. Belle, intelligente, ambitieuse,mature avec un
+            grand sens de la responsabilité combinée à de l'audace qui l'enverra au sommet de ce qu'elle étudie. Je suis
+            heureux de te rencontrer..MARIE PRISCILLE KOUANDE te voir heureuse, sourire t'amuser avec ta très chère
+            besty me rend également heureux étant donné ce que tu vie comme situation ou combat. Continue d'être
+            toi-même et que Dieu t'aide à pouvoir rendre tes parents heureux
+            Tu es une fille bien n'écoute pas les personnes qui essaieront de te faire croire le contraire❤️.
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="gb-card">
+        <img class="gb-photo" src="images/Khalil.jpeg" alt="Proche 17">
+        <div class="gb-body">
+          <div class="gb-name">Khalil</div>
+          <div class="gb-msg">Heyyy Mapiiii ,
+            Aujourd’hui est un jour spécial pour toi, et j’ose espérer que tu te portes à merveille ! En vrai, on se
+            connaît depuis peu, mais ce laps de temps m’a permis de voir à quel point tu es une personne merveilleuse .
+            Ta positivité rayonne et ton sourire éclatant te rend encore plus joviale
+            Même si parfois tu as traversé des moments difficiles, tu as toujours su les mettre de côté pour rester
+            joyeuse et agréable avec nous. Merci d’être cette personne incroyable que tu es .
+            Je te souhaite un Joyeux Anniversaire , rempli de bonheur, de joie et de réussite ! Que la santé, la
+            prospérité et le succès t’accompagnent toujours .
+            Et surtout, que cette amitié toute récente dure encore très longtemps ! Profite à fond de ta journée,
+            Mapiiii !❤️.
+          </div>
+        </div>
+      </div>
+
+
+      
+
+
+
+
+
+    </div>
+  </section>
+
+  <footer>
+    Joyeux <span>♥</span> Anniversaire <span>Marie-Priscile</span> · 03 Avril 2026 🌸
+  </footer>
+
+
+  <script>
+    // PÉTALES 
+    (function () {
+      const c = document.getElementById('petals-container');
+      const cols = ['#e8a0b4', '#f0b8c8', '#fde8ef', 'rgba(201,168,76,.35)', '#f7c5d5'];
+      for (let i = 0; i < 22; i++) {
+        const p = document.createElement('div');
+        p.className = 'petal';
+        const s = Math.random() * 13 + 5;
+        p.style.cssText = `
+        width:${s}px; height:${s}px;
+        left:${Math.random() * 100}%;
+        background:${cols[~~(Math.random() * cols.length)]};
+        animation-duration:${Math.random() * 14 + 8}s;
+        animation-delay:${Math.random() * 12}s;
+      `;
+        c.appendChild(p);
+      }
+    })();
+
+    //  ANIMATION DE RÉVÉLATION
+    // Jouée à chaque première ouverture de session
+    const REVEAL_KEY = 'mapi_revealed_2025';
+
+    window.addEventListener('DOMContentLoaded', () => {
+      if (!sessionStorage.getItem(REVEAL_KEY)) {
+        playReveal();
+      }
+    });
+
+    function playReveal() {
+      sessionStorage.setItem(REVEAL_KEY, '1');
+      const overlay = document.getElementById('reveal-overlay');
+      overlay.classList.add('active');
+      document.getElementById('reveal-msg').classList.add('go');
+      startConfetti();
+      setTimeout(() => overlay.classList.remove('active'), 4200);
+    }
+
+    // CONFETTIS
+    function startConfetti() {
+      const cv = document.getElementById('confetti-canvas');
+      cv.style.display = 'block';
+      cv.width = innerWidth; cv.height = innerHeight;
+      const ctx = cv.getContext('2d');
+      const cols = ['#e8a0b4', '#c9637e', '#c9a84c', '#f0d080', '#fde8ef', '#fff', '#f7c5d5'];
+      const ps = Array.from({ length: 150 }, () => ({
+        x: Math.random() * cv.width,
+        y: Math.random() * cv.height - cv.height,
+        r: Math.random() * 7 + 3,
+        d: Math.random() * 4 + 1.2,
+        col: cols[~~(Math.random() * cols.length)],
+        tilt: 0, ta: 0, ts: Math.random() * .12 + .04
+      }));
+      let f = 0;
+      (function draw() {
+        ctx.clearRect(0, 0, cv.width, cv.height);
+        ps.forEach(p => {
+          ctx.beginPath();
+          ctx.ellipse(p.x + p.tilt, p.y, p.r * .6, p.r, p.ta, 0, Math.PI * 2);
+          ctx.fillStyle = p.col; ctx.fill();
+          p.y += p.d; p.ta += p.ts; p.tilt = Math.sin(p.ta) * 12;
+          if (p.y > cv.height) { p.y = -10; p.x = Math.random() * cv.width; }
+        });
+        if (++f < 240) requestAnimationFrame(draw);
+        else cv.style.display = 'none';
+      })();
+    }
+
+    // le LIGHTBOX
+    function openLB(src) {
+      document.getElementById('lb-img').src = src;
+      document.getElementById('lightbox').classList.add('active');
+    }
+    function closeLB() {
+      document.getElementById('lightbox').classList.remove('active');
+    }
+    document.getElementById('lightbox').addEventListener('click', e => {
+      if (e.target === e.currentTarget) closeLB();
+    });
+
+    // Masquer les images galerie cassées (fichier manquant)
+    document.querySelectorAll('.gallery-item img, .gb-photo').forEach(img => {
+      img.addEventListener('error', function () {
+        const item = this.closest('.gallery-item');
+        if (item) {
+          item.classList.add('empty');
+          item.innerHTML = '📷';
+          item.onclick = null;
+        }
+        // Pour les gb-photo cassées → placeholder
+        if (this.classList.contains('gb-photo')) {
+          const ph = document.createElement('div');
+          ph.className = 'gb-photo-placeholder';
+          ph.textContent = '🌸';
+          this.replaceWith(ph);
+        }
+      });
+    });
+
+    // ── SCROLL REVEAL ──
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    // Observer chaque gb-card individuellement
+    const gbObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+          gbObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.gb-card').forEach((card, i) => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(28px)';
+      card.style.transition = `opacity .6s ease ${(i % 4) * 0.08}s, transform .6s ease ${(i % 4) * 0.08}s`;
+      gbObs.observe(card);
+    });
+  </script>
+</body>
+
+</html>
